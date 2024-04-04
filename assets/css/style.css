@@ -1764,3 +1764,15 @@ section {
   border-radius: 10px;
 }
 
+@media screen and (max-width: 480px) {
+  .card.product {
+    width: 20rem;
+    height: 40rem;
+    margin:auto;
+    font-size:0.7rem;
+  }
+
+  .card-title{
+    font-size:1rem;
+  }
+}
