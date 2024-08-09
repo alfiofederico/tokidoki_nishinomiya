@@ -4,7 +4,7 @@
 # General
 --------------------------------------------------------------*/
 body {
-  font-family: "Open Sans", sans-serif;
+  font-family: Helvetica Rounded;
   background: #0c0b09;
   color: #fff;
 }
@@ -213,7 +213,7 @@ h6 {
   color: #fff;
   border-radius: 50px;
   padding: 8px 25px;
-  text-transform: uppercase;
+
   font-size: 13px;
   font-weight: 500;
   letter-spacing: 1px;
@@ -516,7 +516,7 @@ h6 {
   font-weight: 600;
   font-size: 13px;
   letter-spacing: 0.5px;
-  text-transform: uppercase;
+  /* text-transform: uppercase; */
   display: inline-block;
   padding: 12px 30px;
   border-radius: 50px;
@@ -671,7 +671,7 @@ section {
   line-height: 1px;
   margin: 0 0 5px 0;
   letter-spacing: 2px;
-  text-transform: uppercase;
+/*   text-transform: uppercase; */
   color: #aaaaaa;
   font-family: "Poppins", sans-serif;
 }
@@ -1612,7 +1612,7 @@ section {
   padding: 2px 0 2px 0;
   line-height: 1;
   font-weight: 300;
-  text-transform: uppercase;
+
   font-family: "Poppins", sans-serif;
 }
 
