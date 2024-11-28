@@ -1810,3 +1810,22 @@ section {
     font-size:1rem;
   }
 }
+
+
+table {
+  width: 50%; /* Makes the table span the container */
+  border-collapse: collapse; /* Avoids double borders */
+  margin: 20px 0; /* Adds some spacing around the table */
+}
+
+th, td {
+  border: 1px solid #f8f8f8; /* Adds solid black borders */
+  padding: 4px; /* Adds space inside cells for readability */
+  text-align: center; /* Centers the text horizontally */
+}
+
+th {
+ 
+  font-weight: bold; /* Ensures header text is bold */
+}
+
