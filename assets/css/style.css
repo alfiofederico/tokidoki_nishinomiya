@@ -1843,18 +1843,27 @@ td[style*="background-color: #ec9663;"] {
 
 /* Responsive styles for mobile */
 @media (max-width: 768px) {
-  /* Make table scrollable horizontally on small screens */
-  .table-responsive {
-    overflow-x: auto;
-    -webkit-overflow-scrolling: touch; /* Smooth scrolling on iOS */
-  }
-
+  /* Decrease font size on mobile */
   table {
-    font-size: 12px; /* Decrease font size for smaller screens */
+    font-size: 12px;
   }
 
   th, td {
-    padding: 6px; /* Decrease padding for better space utilization */
+    padding: 6px;
+  }
+
+  /* Targeting the last column (ワイン12本以上) and the below cells (送料無料) */
+  td:last-child, th:last-child {
+    font-size: 14px;  /* Make the text slightly bigger */
+    padding: 12px 8px; /* Add extra padding to avoid wrapping */
+  }
+
+  /* Adjust the last two columns inside ワインのみ */
+  td:nth-child(4), td:nth-child(5) {
+    padding: 12px 8px; /* Increase padding to make them bigger */
+  }
+
+  td:nth-child(5) {
+    font-size: 14px; /* Increase the font size for this specific column */
   }
 }
-
