@@ -1812,20 +1812,31 @@ section {
 }
 
 
+/* General table styles */
 table {
-  width: 50%; /* Makes the table span the container */
-  border-collapse: collapse; /* Avoids double borders */
+  width: 100%; /* Make sure the table spans full width on mobile */
+  border-collapse: collapse; /* Ensure borders don't overlap */
   margin: 20px 0; /* Adds some spacing around the table */
 }
 
+/* Apply a stronger border style */
 th, td {
-  border: 1px solid #f8f8f8; /* Adds solid black borders */
-  padding: 4px; /* Adds space inside cells for readability */
+  border: 2px solid #ccc !important; /* Make borders a bit thicker and ensure they are applied */
+  padding: 8px; /* Adds space inside cells */
   text-align: center; /* Centers the text horizontally */
 }
 
+/* Add a background color for better contrast on the header */
 th {
- 
   font-weight: bold; /* Ensures header text is bold */
+ 
+}
+
+/* Responsive adjustments for mobile screens */
+@media (max-width: 600px) {
+  th, td {
+    font-size: 14px; /* Adjust font size for better mobile readability */
+    padding: 10px; /* Increase padding to make cells more spacious */
+  }
 }
 
