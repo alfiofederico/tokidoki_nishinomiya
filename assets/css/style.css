@@ -1855,15 +1855,15 @@ td[style*="background-color: #ec9663;"] {
   /* Targeting the last column (ワイン12本以上) and the below cells (送料無料) */
   td:last-child, th:last-child {
     font-size: 14px;  /* Make the text slightly bigger */
-    padding: 12px 8px; /* Add extra padding to avoid wrapping */
+    padding: 12px 10px; /* Add extra padding to avoid wrapping */
   }
 
   /* Adjust the last two columns inside ワインのみ */
   td:nth-child(4), td:nth-child(5) {
-    padding: 12px 8px; /* Increase padding to make them bigger */
+    padding: 12px 10px; /* Increase padding to make them bigger */
   }
 
   td:nth-child(5) {
-    font-size: 14px; /* Increase the font size for this specific column */
+    font-size: 12px; /* Increase the font size for this specific column */
   }
 }
