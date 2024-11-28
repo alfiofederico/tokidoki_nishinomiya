@@ -1812,31 +1812,49 @@ section {
 }
 
 
-/* General table styles */
+/* Make the table span full width */
 table {
-  width: 100%; /* Make sure the table spans full width on mobile */
-  border-collapse: collapse; /* Ensure borders don't overlap */
-  margin: 20px 0; /* Adds some spacing around the table */
+  width: 100%; /* Ensures the table takes up full width of the container */
+  border-collapse: collapse; /* Keeps the borders from overlapping */
+  margin: 20px 0; /* Adds spacing around the table */
 }
 
-/* Apply a stronger border style */
+/* Ensure table cells have clear borders */
 th, td {
-  border: 2px solid #ccc !important; /* Make borders a bit thicker and ensure they are applied */
-  padding: 8px; /* Adds space inside cells */
-  text-align: center; /* Centers the text horizontally */
+  border: 2px solid #ccc !important; /* Thicker borders for visibility */
+  padding: 8px; /* Adds space inside cells for better readability */
+  text-align: center; /* Centers text inside the cells */
 }
 
-/* Add a background color for better contrast on the header */
+/* Keep header bold and background as it is */
 th {
-  font-weight: bold; /* Ensures header text is bold */
- 
+  font-weight: bold;
+  
 }
 
-/* Responsive adjustments for mobile screens */
-@media (max-width: 600px) {
+/* Custom background colors for certain cells */
+td[style*="background-color: #c4d6eb;"] {
+  background-color: #c4d6eb; /* Light blue for 冷蔵 */
+}
+
+td[style*="background-color: #ec9663;"] {
+  background-color: #ec9663; /* Light orange for 常温 */
+}
+
+/* Responsive styles for mobile */
+@media (max-width: 768px) {
+  /* Make table scrollable horizontally on small screens */
+  .table-responsive {
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch; /* Smooth scrolling on iOS */
+  }
+
+  table {
+    font-size: 12px; /* Decrease font size for smaller screens */
+  }
+
   th, td {
-    font-size: 14px; /* Adjust font size for better mobile readability */
-    padding: 10px; /* Increase padding to make cells more spacious */
+    padding: 6px; /* Decrease padding for better space utilization */
   }
 }
 
