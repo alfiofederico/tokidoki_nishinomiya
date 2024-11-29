@@ -1871,3 +1871,21 @@ td[style*="background-color: #ec9663;"] {
 .container.info-product h4 {
   font-weight: bold;
 }
+
+@media (max-width: 768px) { /* Adjust the breakpoint as needed */
+  .info-product {
+    font-size: 14px; /* Adjust the size for smaller screens */
+  }
+
+  .info-product h4 {
+    font-size: 16px; /* Make headings slightly smaller */
+  }
+
+  .info-product small {
+    font-size: 12px; /* Adjust for smaller additional notes */
+  }
+
+  .container.info-product h4 {
+  font-weight: bold;
+}
+}
