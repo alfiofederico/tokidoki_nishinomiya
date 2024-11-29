@@ -1867,3 +1867,7 @@ td[style*="background-color: #ec9663;"] {
     font-size: 12px; /* Increase the font size for this specific column */
   }
 }
+
+.container.info-product h4 {
+  font-weight: bold;
+}
