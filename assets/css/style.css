@@ -1798,6 +1798,10 @@ section {
   border-radius: 10px;
 }
 
+.card-text.long{
+  font-size:0.8rem;
+}
+
 @media screen and (max-width: 480px) {
   .card.product {
     width: 20rem;
