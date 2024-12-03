@@ -1799,7 +1799,7 @@ section {
 }
 
 .card-text.long{
-  font-size:0.8rem;
+  font-size:1rem;
 }
 
 @media screen and (max-width: 480px) {
@@ -1814,9 +1814,9 @@ section {
     font-size:1rem;
   }
 
-  .card-text.long{
-  font-size:0.6rem;
-}
+card-text.long{
+  font-size:0.7rem;
+} 
 }
 
 
