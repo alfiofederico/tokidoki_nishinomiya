@@ -1792,11 +1792,20 @@ section {
   border-radius: 10px;
 }
 
-.img-fluid.product {
-  height: 20rem; 
-  width: 30rem; 
-  border-radius: 10px;
+.card {
+  background-color: #f8f9fa; /* Card background */
+  border-radius: 15px; /* Matches style */
+  overflow: hidden; /* Clips child elements to match radius */
+  padding: 15px; /* Consistent padding */
 }
+
+.img-fluid.product {
+  width: 100%;
+  height: 20rem;
+  object-fit: cover;
+  border-radius: 10px; /* Slight rounding for images */
+}
+
 
 .card-text.long{
   font-size:1rem;
