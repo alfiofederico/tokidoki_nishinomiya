@@ -1811,6 +1811,12 @@ section {
   font-size:1rem;
 }
 
+.card.product.wine{
+ height: 30rem;
+ margin-left: 460px;
+ margin-bottom: 50px;
+}
+
 @media screen and (max-width: 480px) {
   .card.product {
     width: 20rem;
