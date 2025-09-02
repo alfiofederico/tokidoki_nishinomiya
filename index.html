@@ -49,6 +49,20 @@
 
   <link href="assets/css/style.css" rel="stylesheet">
 
+  <style>
+  /* Prevent vertical cropping for September menu images */
+  .menu-grid .menu-img {
+    width: 100%;
+    height: auto;        /* keeps natural aspect ratio */
+    display: block;
+  }
+
+  /* optional spacing between columns on all screens */
+  .menu-grid > [class*="col-"] { 
+    margin-bottom: 1.5rem;
+  }
+</style>
+
 
 </head>
 
@@ -210,47 +224,46 @@
     </section> -->
 
     <!-- ======= Menu Section ======= -->
-    <section id="menu" class="menu section-bg">
-      <div class="container" data-aos="fade-up">
+<!-- ======= Menu Section ======= -->
+<section id="menu" class="menu section-bg">
+  <div class="container" data-aos="fade-up">
 
-        <div class="section-title">
-          <h2>menu</h2>
-          <p>our offers:</p>
-        </div>
+    <div class="section-title">
+      <h2>menu</h2>
+      <p>our offers:</p>
+    </div>
 
-        <div class="row" data-aos="fade-up" data-aos-delay="100">
-          <div class="col-lg-12 d-flex justify-content-center">
-            <ul id="menu-flters">
-              <!-- <li data-filter="*" class="filter-active">All</li> -->
-              <li data-filter=".filter-café">coffee time <br>9:30-11:00 & 15:00-17:00</li>
-              <li data-filter=".filter-lunch">lunch<br> 11:30-15:00 </li>
-              <li data-filter=".filter-teaTime">dinner<br> 18:00-21:30</li>
-              <li data-filter=".filter-dinner">bar time<br> 21:30-23:00 (食べ物有り) 
-             
-            </ul>
-          </div>
-        </div>
-
-            <!-- New Section for September Offer -->
-        <div class="row my-5" data-aos="fade-up" data-aos-delay="150">
-          <div class="col-12 text-center">
-            <h2>agosto | menu</h2>
-          </div>
-          <div class="col-6 mx-auto"> 
-            <img src="assets/img/agosto_menu.jpg" alt="August Menu" class="img-fluid w-100 shadow-lg rounded">
-          </div>
-        </div>
-
-
-        <div class="row menu-container" data-aos="fade-up" data-aos-delay="200">
-
-         
-
-
-        </div>
-
+    <div class="row" data-aos="fade-up" data-aos-delay="100">
+      <div class="col-lg-12 d-flex justify-content-center">
+        <ul id="menu-flters">
+          <li data-filter=".filter-café">coffee time <br>9:30-11:00 & 15:00-17:00</li>
+          <li data-filter=".filter-lunch">lunch<br> 11:30-15:00 </li>
+          <li data-filter=".filter-teaTime">dinner<br> 18:00-21:30</li>
+          <li data-filter=".filter-dinner">bar time<br> 21:30-23:00 (食べ物有り)</li>
+        </ul>
       </div>
-    </section>
+    </div>
+
+    <!-- September | three images same row on desktop, stack on mobile -->
+    <div class="row menu-grid" data-aos="fade-up" data-aos-delay="200">
+      <div class="col-12 text-center mb-3">
+        <h2>settembre | menu</h2>
+      </div>
+
+      <div class="col-12 col-md-4 text-center">
+        <img src="assets/img/menu_sett_2.jpg" alt="September Menu 1" class="menu-img shadow-lg rounded">
+      </div>
+      <div class="col-12 col-md-4 text-center">
+        <img src="assets/img/menu_sett_1.jpg" alt="September Menu 2" class="menu-img shadow-lg rounded">
+      </div>
+      <div class="col-12 col-md-4 text-center">
+        <img src="assets/img/menu_sett.jpg" alt="September Menu 3" class="menu-img shadow-lg rounded">
+      </div>
+    </div>
+
+  </div>
+</section>
+
  
     <!-- End Menu Section -->
 
