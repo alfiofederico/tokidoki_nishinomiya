@@ -83,11 +83,19 @@ h6 {
   height: auto;
 }
 
-video {
+.gallery-item video {
   width: 100%;
   height: auto;
+  display: block;
 }
 
+.gallery-item {
+  width: 100%;
+}
+
+.video-wrapper {
+  width: 100%;
+}
 
 /*--------------------------------------------------------------
 # Back to top button
